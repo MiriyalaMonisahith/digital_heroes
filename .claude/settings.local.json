@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npm install *)",
+      "Bash(cd \"C:\\\\Users\\\\miriy\\\\Workspaces\\\\golf\" && mkdir -p lib/supabase lib/actions supabase components/ui components/marketing components/dashboard components/admin components/charities \"app/\\(public\\)/charities/[slug]\" \"app/\\(auth\\)/login\" \"app/\\(auth\\)/signup\" \"app/\\(dashboard\\)/dashboard/scores\" \"app/\\(dashboard\\)/dashboard/subscription\" \"app/\\(dashboard\\)/dashboard/draws\" \"app/\\(dashboard\\)/dashboard/winnings\" \"app/\\(admin\\)/admin/users\" \"app/\\(admin\\)/admin/draws\" \"app/\\(admin\\)/admin/charities\" \"app/\\(admin\\)/admin/winners\" \"app/api/upload\" types && echo done)",
+      "Bash(npm run *)",
+      "Bash(npx --yes @next/codemod@canary middleware-to-proxy .)",
+      "Bash(npx --yes @next/codemod@canary middleware-to-proxy . --force)",
+      "Bash(xargs grep -l \"GenericTable\")",
+      "Bash(chromium-cli --version)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/charities)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/login)",
+      "Bash(curl -s http://localhost:3000/login)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/signup)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} -> \" http://localhost:3000/dashboard)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -L http://localhost:3000/dashboard)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} -> \" http://localhost:3000/admin)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" -L http://localhost:3000/admin)",
+      "Bash(grep -iE \"error|warn\" /tmp/nextdev.log | grep -v \"npm warn deprecated\" | head -50)",
+      "Read(//tmp/**)",
+      "Bash(lsof -ti:3000 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\miriy\\Workspaces\\golf\\app\\(public)\\charities"
+    ]
+  }
+}
