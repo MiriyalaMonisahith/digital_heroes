@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream: #f7f5ee;
+  --color-cream-card: #eef1ea;
+  --color-sand: #e3ddc9;
+  --color-sage-50: #eef2ee;
+  --color-sage-100: #d9e3da;
+  --color-sage-300: #9fb6a3;
+  --color-sage-500: #5c7a63;
+  --color-sage-600: #4a6350;
+  --color-sage-700: #3e5644;
+  --color-pine-900: #1f2b24;
+  --color-pine-800: #263429;
+  --color-pine-700: #2e3d30;
+  --color-pine-600: #3a4c3c;
+  --color-amber-400: #ecbb7e;
+  --color-amber-500: #e3a863;
+  --color-amber-600: #c98a3e;
+  --color-charcoal-900: #23291f;
+  --color-charcoal-700: #3a4235;
+  --color-charcoal-500: #6b7568;
+  --color-charcoal-300: #a3ab99;
+  --color-border: #ded8c4;
+  --color-danger: #b3543f;
+  --color-danger-50: #f6e9e5;
+  --color-ok: #4a6350;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-cream: var(--color-cream);
+  --color-cream-card: var(--color-cream-card);
+  --color-sand: var(--color-sand);
+  --color-sage-50: var(--color-sage-50);
+  --color-sage-100: var(--color-sage-100);
+  --color-sage-300: var(--color-sage-300);
+  --color-sage-500: var(--color-sage-500);
+  --color-sage-600: var(--color-sage-600);
+  --color-sage-700: var(--color-sage-700);
+  --color-pine-900: var(--color-pine-900);
+  --color-pine-800: var(--color-pine-800);
+  --color-pine-700: var(--color-pine-700);
+  --color-pine-600: var(--color-pine-600);
+  --color-amber-400: var(--color-amber-400);
+  --color-amber-500: var(--color-amber-500);
+  --color-amber-600: var(--color-amber-600);
+  --color-charcoal-900: var(--color-charcoal-900);
+  --color-charcoal-700: var(--color-charcoal-700);
+  --color-charcoal-500: var(--color-charcoal-500);
+  --color-charcoal-300: var(--color-charcoal-300);
+  --color-border: var(--color-border);
+  --color-danger: var(--color-danger);
+  --color-danger-50: var(--color-danger-50);
+  --color-ok: var(--color-ok);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-charcoal-900);
+  font-family: var(--font-sans);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+::selection {
+  background: var(--color-amber-400);
+  color: var(--color-pine-900);
 }
